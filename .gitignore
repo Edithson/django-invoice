@@ -1,0 +1,19 @@
+# Fichiers et dossiers spécifiques à l'environnement
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*~
+
+# Fichiers de la base de données
+db.sqlite3
+
+# Fichiers d'environnement
+.env
+.flaskenv
+
+# Fichiers de log ou de configuration IDE
+*.log
+.vscode/
+.idea/

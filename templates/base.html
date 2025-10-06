@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Invoice{% endblock %}</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'static/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'fact_app/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>{% block header %}Bienvenue sur mon site Django{% endblock %}</h1>
+    </header>
+    <main>
+        {% block content %}
+        <p>Contenu principal de la page.</p>
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2025 Mon site Django</p>
+    </footer>
+</body>
+</html>
